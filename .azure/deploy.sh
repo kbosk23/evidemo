@@ -1,4 +1,9 @@
 #!/bin/bash
+# Deployment script for Azure App Service
+cd /home/site/wwwroot
+npm install
+npm run build
+npm start
 
 # Create resource group
 az group create --name reading-road-rg --location eastus
