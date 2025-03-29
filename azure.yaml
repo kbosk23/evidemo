@@ -1,0 +1,9 @@
+name: reading-road
+metadata:
+  template: reading-road@0.1.0
+services:
+  web:
+    project: .
+    language: typescript
+    host: appservice
+    dist: .next 
