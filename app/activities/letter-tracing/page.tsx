@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import LetterTracer from '@/components/LetterTracer';
-import { Button } from '@/components/ui/button';
+import LetterTracer from '../../../components/LetterTracer';
+import { Button } from '../../../components/ui/button';
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 

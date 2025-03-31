@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { MetricCard } from "@/components/dashboard/MetricCard";
+import { MetricCard } from "../../../components/dashboard/MetricCard";
 import {
   BarChart,
   LineChart,
@@ -22,12 +22,12 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Progress } from "@/components/ui/progress";
-import { FlowAnalytics } from '@/components/dashboard/FlowAnalytics';
-import { useLanguage } from '@/app/contexts/LanguageContext';
-import { LanguageSelector } from '@/app/components/LanguageSelector';
-import { LanguageProvider } from '@/app/contexts/LanguageContext';
+} from "../../../components/ui/select";
+import { Progress } from "../../../components/ui/progress";
+import { FlowAnalytics } from '../../../components/dashboard/FlowAnalytics';
+import { useLanguage } from '../../contexts/LanguageContext';
+import { LanguageSelector } from '../../components/LanguageSelector';
+import { LanguageProvider } from '../../contexts/LanguageContext';
 
 interface AnalyticsData {
   timeRange: {
