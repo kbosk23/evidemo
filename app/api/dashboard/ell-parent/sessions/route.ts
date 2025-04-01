@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { mockSessions } from '@/utils/mockData';
+import { mockSessions } from '../../../../../utils/mockData';
 
 export async function GET() {
   try {

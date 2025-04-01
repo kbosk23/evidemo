@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { mockLearners } from '@/utils/mockData';
+import { mockLearners } from '../../../../../utils/mockData';
 
 interface FlowTrends {
   averageFlowScore: number;

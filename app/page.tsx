@@ -1,4 +1,4 @@
-import { getHumeAccessToken } from "@/utils/getHumeAccessToken";
+import { getHumeAccessToken } from "../utils/getHumeAccessToken";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { BarChart, Users, BookOpen } from "lucide-react";
