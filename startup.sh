@@ -1,12 +1,18 @@
 #!/bin/bash
 # Startup script for Azure App Service
-# Added for deployment trigger
+set -e
+
+# Change to the app directory
 cd /home/site/wwwroot
 
-# Install dependencies
-npm install
-npm install -D typescript @types/node
+# Clean install dependencies
+echo "Installing dependencies..."
+npm ci
 
-# Build and start the application
+# Build the application
+echo "Building the application..."
 npm run build
+
+# Start the application
+echo "Starting the application..."
 npm start 

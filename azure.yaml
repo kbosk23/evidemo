@@ -20,9 +20,7 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: |
-        npm install
-        npm install -D typescript @types/node
+      run: npm ci
 
     - name: Build Next.js app
       run: npm run build
