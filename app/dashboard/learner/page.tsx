@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { MetricCard } from "@/components/dashboard/MetricCard";
+import { MetricCard } from "../../../components/dashboard/MetricCard";
 import {
   BookOpen,
   Brain,
@@ -12,8 +12,8 @@ import {
   Activity,
 } from "lucide-react";
 import { format, subDays } from "date-fns";
-import { Progress } from "@/components/ui/progress";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Progress } from "../../../components/ui/progress";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../components/ui/card";
 
 interface LearnerDashboardData {
   overview: {

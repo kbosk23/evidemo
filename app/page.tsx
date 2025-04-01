@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { BarChart, Users, BookOpen } from "lucide-react";
 
-const Chat = dynamic(() => import("@/components/Chat"), {
+const Chat = dynamic(() => import("../components/Chat"), {
   ssr: false,
 });
 

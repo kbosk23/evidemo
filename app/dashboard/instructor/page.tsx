@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { MetricCard } from "@/components/dashboard/MetricCard";
+import { MetricCard } from "../../../components/dashboard/MetricCard";
 import {
   Calendar,
   Clock,
@@ -14,14 +14,14 @@ import {
   BookOpen,
 } from "lucide-react";
 import { formatDistanceToNow, format, subDays } from "date-fns";
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "../../../components/ui/progress";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "../../../components/ui/select";
 
 interface LearnerProgress {
   id: string;

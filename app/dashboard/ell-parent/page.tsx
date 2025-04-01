@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { MetricCard } from "@/components/dashboard/MetricCard";
+import { MetricCard } from "../../../components/dashboard/MetricCard";
 import {
   Calendar,
   Clock,
@@ -15,18 +15,18 @@ import {
 } from "lucide-react";
 import { formatDistanceToNow, format, subDays } from "date-fns";
 import { es, zhCN, fr } from 'date-fns/locale';
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "../../../components/ui/progress";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { LanguageProvider, useLanguage } from "@/app/contexts/LanguageContext";
-import { LanguageSelector } from "@/app/components/LanguageSelector";
-import { FlowStateCard } from "@/components/dashboard/FlowStateCard";
-import { LearnerFlowCard } from "@/components/dashboard/LearnerFlowCard";
+} from "../../../components/ui/select";
+import { LanguageProvider, useLanguage } from "../../contexts/LanguageContext";
+import { LanguageSelector } from "../../components/LanguageSelector";
+import { FlowStateCard } from "../../../components/dashboard/FlowStateCard";
+import { LearnerFlowCard } from "../../../components/dashboard/LearnerFlowCard";
 
 interface LearnerProgress {
   id: string;
