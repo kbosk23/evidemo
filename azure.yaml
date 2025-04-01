@@ -25,7 +25,9 @@ jobs:
         version: 8
 
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+      run: |
+        pnpm install --frozen-lockfile
+        pnpm add -D typescript @types/node
 
     - name: Build Next.js app
       run: pnpm run build
