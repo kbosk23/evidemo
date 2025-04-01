@@ -3,15 +3,10 @@
 # Added for deployment trigger
 cd /home/site/wwwroot
 
-# Install pnpm if not already installed
-if ! command -v pnpm &> /dev/null; then
-    npm install -g pnpm
-fi
-
 # Install dependencies
-pnpm install --frozen-lockfile
-pnpm add -D typescript @types/node
+npm install
+npm install -D typescript @types/node
 
 # Build and start the application
-pnpm run build
-pnpm start 
+npm run build
+npm start 

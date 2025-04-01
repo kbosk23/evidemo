@@ -17,20 +17,15 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ env.NODE_VERSION }}
-        cache: 'pnpm'
-
-    - name: Install pnpm
-      uses: pnpm/action-setup@v2
-      with:
-        version: 8
+        cache: 'npm'
 
     - name: Install dependencies
       run: |
-        pnpm install --frozen-lockfile
-        pnpm add -D typescript @types/node
+        npm install
+        npm install -D typescript @types/node
 
     - name: Build Next.js app
-      run: pnpm run build
+      run: npm run build
       env:
         NEXT_PUBLIC_HUME_CONFIG_ID: ${{ secrets.NEXT_PUBLIC_HUME_CONFIG_ID }}
 
